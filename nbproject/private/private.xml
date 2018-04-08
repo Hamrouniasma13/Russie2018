@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Views/agence/fxml/ListerAgenceFXML.fxml</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/IServices/IAgenceService.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Views/agence/fxml/Agence.fxml</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/russie2018/Russie2018.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Views/agence/controller/ListerAgenceFXMLController.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Services/AgenceService.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Views/agence/controller/AgenceController.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Views/agence/fxml/frontAgence.fxml</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/Views/agence/controller/FrontAgenceController.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/entities/Agence.java</file>
+            <file>file:/C:/Users/Lenovo/Documents/NetBeansProjects/Russie2018/src/IServices/IServiceUser.java</file>
+        </group>
+    </open-files>
+</project-private>

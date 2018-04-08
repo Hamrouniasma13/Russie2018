@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXasma.FXMLOffreAjoutController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="241.0" layoutX="125.0" layoutY="11.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="544.0">
+         <fill>
+            <LinearGradient endX="0.17142857142857137" endY="0.7952380952380952" startX="0.09047619047619047" startY="0.9238095238095239">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextField fx:id="Titre_offre" layoutX="173.0" layoutY="92.0" promptText="Titre Offre" />
+      <TextField fx:id="Type_offre" layoutX="364.0" layoutY="92.0" promptText="Type Offre" />
+      <TextField fx:id="Date_alleer" layoutX="173.0" layoutY="134.0" promptText="Date alléer " />
+      <TextField fx:id="Dateretour" layoutX="364.0" layoutY="134.0" promptText="Date retour" />
+      <Button fx:id="btn1" layoutX="239.0" layoutY="175.0" mnemonicParsing="false" onAction="#saveOffre" text="Save">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="322.0" layoutY="42.0" prefHeight="25.0" prefWidth="182.0" text="Ajouter Offre">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn2" layoutX="345.0" layoutY="182.0" mnemonicParsing="false" onAction="#deleteOffre" text="Delete" />
+   </children>
+</AnchorPane>

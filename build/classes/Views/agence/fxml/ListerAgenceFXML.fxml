@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.agence.controller.ListerAgenceFXMLController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="896.0" layoutX="-23.0">
+         <image>
+            <Image url="@Football-Soccer-Ball-www.wallpapersbrowse.com.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TableAgence" layoutX="14.0" layoutY="82.0" opacity="0.74" prefHeight="412.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="nomAgence" prefWidth="94.0" text="NomAgence" />
+          <TableColumn fx:id="adresseAgence" prefWidth="101.0" text="AdresseAgence" />
+            <TableColumn fx:id="ContactAgence" prefWidth="100.0" text="ContactAgence" />
+            <TableColumn fx:id="chaine" prefWidth="81.0" text="CHAINE" />
+            <TableColumn fx:id="nom_image" prefWidth="87.0" text="nom_image" />
+            <TableColumn fx:id="nom_image1" prefWidth="62.0" text="Action" />
+        </columns>
+      </TableView>
+      <TextField fx:id="filterField" layoutX="14.0" layoutY="25.0" prefHeight="38.0" prefWidth="282.0" promptText="Rechercher Agence" />
+      <Separator layoutX="546.0" layoutY="6.0" orientation="VERTICAL" prefHeight="597.0" prefWidth="11.0" />
+      <TabPane layoutX="557.0" layoutY="7.0" prefHeight="597.0" prefWidth="306.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Modifier Agence">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="22.0" prefHeight="38.0" prefWidth="170.0" text="Modifier Agence" textFill="#c75234">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="10.0" layoutY="52.0" prefHeight="436.0" prefWidth="289.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="114.0" text="Nom Agence" textFill="#2f2d2d" />
+                              <TextField fx:id="nomAg" opacity="0.68" />
+                              <Label prefHeight="24.0" prefWidth="104.0" text="Adresse Agence" textFill="#0a0a0a" />
+                              <TextField fx:id="AdresseAgence" opacity="0.72" />
+                              <VBox prefHeight="165.0" prefWidth="289.0">
+                                 <children>
+                                    <Label text="Descripition" />
+                                    <TextArea fx:id="descAgence" opacity="0.78" prefHeight="133.0" prefWidth="254.0" promptText="Description" />
+                                 </children>
+                              </VBox>
+                              <Label text="Contact Agence" textFill="#141414" />
+                              <TextField fx:id="contactAgence" opacity="0.8" />
+                              <Label fx:id="imgtxt" text="Image ">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="imgtxt" prefHeight="17.0" prefWidth="210.0" text="Label" />
+                                    <Button fx:id="uploadBtn" mnemonicParsing="false" text="Parcourir" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="deletebtn" layoutX="71.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Supprimer" />
+                        <Button fx:id="updatebtn" layoutX="161.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Mise à jour" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Ajouter Agence">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="22.0" prefHeight="38.0" prefWidth="170.0" text="Ajouter Agence" textFill="#c75234">
+                           <font>
+                              <Font name="Forte" size="22.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="9.0" layoutY="50.0" prefHeight="412.0" prefWidth="289.0">
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="114.0" text="Nom Agence" textFill="#2f2d2d" />
+                              <TextField fx:id="nomAg11" opacity="0.68" />
+                              <Label prefHeight="24.0" prefWidth="104.0" text="Adresse Agence" />
+                              <TextField fx:id="AdresseAgence11" opacity="0.72" />
+                              <VBox prefHeight="165.0" prefWidth="289.0">
+                                 <children>
+                                    <Label text="Descripition" />
+                                    <TextArea fx:id="descAgence11" opacity="0.78" prefHeight="133.0" prefWidth="254.0" promptText="Description" />
+                                 </children>
+                              </VBox>
+                              <Label text="Contact Agence" textFill="#363636" />
+                              <TextField fx:id="contactAgence11" opacity="0.8" />
+                              <Label fx:id="imgtxt1" text="Image ">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox>
+                                 <children>
+                                    <Label fx:id="imgtxt11" prefHeight="17.0" prefWidth="210.0" text="Label" />
+                                    <Button fx:id="uploadBtn11" mnemonicParsing="false" text="Parcourir" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button fx:id="addbtn" layoutX="108.0" layoutY="486.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Ajouter" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
